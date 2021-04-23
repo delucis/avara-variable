@@ -471,10 +471,18 @@ stemValues = (
 glyphs = (
 {
 glyphname = A;
-lastChange = "2021-04-23 12:16:07 +0000";
+lastChange = "2021-04-23 12:18:07 +0000";
 layers = (
 {
 anchors = (
+{
+name = bottom;
+pos = (440,0);
+},
+{
+name = ogonek;
+pos = (800,0);
+},
 {
 name = right;
 pos = (840,0);
@@ -647,6 +655,14 @@ width = 880;
 {
 anchors = (
 {
+name = bottom;
+pos = (400,0);
+},
+{
+name = ogonek;
+pos = (720,0);
+},
+{
 name = top;
 pos = (620,800);
 }
@@ -694,6 +710,20 @@ com.typemytype.robofont.mark = (
 width = 800;
 },
 {
+anchors = (
+{
+name = bottom;
+pos = (400,0);
+},
+{
+name = ogonek;
+pos = (680,0);
+},
+{
+name = top;
+pos = (400,840);
+}
+);
 layerId = master01;
 shapes = (
 {
