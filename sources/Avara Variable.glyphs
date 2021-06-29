@@ -85725,7 +85725,7 @@ ref = circumflexcomb;
 },
 {
 anchor = top_viet;
-pos = (240,120);
+pos = (200,120);
 ref = gravecomb;
 }
 );
@@ -85739,7 +85739,7 @@ ref = circumflexcomb;
 },
 {
 anchor = top_viet;
-pos = (200,120);
+pos = (240,120);
 ref = gravecomb;
 }
 );
