@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+
+    <title>Avara Variable - Demo Page</title>
+    <meta name="description" content="Specimen for the Avara Variable font." />
+    <meta name="author" content="Chris Swithinbank" />
+
+    <style>
+      @font-face {
+        font-family: "Avara";
+        src: url("fonts/AvaraVariable.woff2") format("woff2-variations");
+        font-style: normal;
+        font-weight: 100 900;
+      }
+
+      body {
+        margin: 0;
+        font-size: 1.125rem;
+        font-family: "Avara";
+        font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "clig" 1, "calt" 1,
+          "frac" 1;
+        font-weight: 300;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      main {
+        position: relative;
+        margin: 0;
+        padding: 0 4vw;
+        background-color: var(--bg, white);
+        color: var(--fg, black);
+      }
+
+      main > * {
+        max-width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1vw;
+        padding-right: 1vw;
+      }
+
+      header {
+        display: flex;
+        position: sticky;
+        top: 0;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        border-bottom-style: solid;
+        box-shadow: 0 0.75em 1.5em -1.25em var(--fg, black);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 200%, 0% 200%);
+      }
+
+      header,
+      footer {
+        border-color: var(--fg, black);
+        border-width: 2px;
+        background-color: var(--bg, white);
+        padding-top: 1em;
+        padding-bottom: 1em;
+      }
+
+      footer {
+        border-top-style: dashed;
+        padding-top: 2em;
+        padding-bottom: 5em;
+      }
+
+      footer p {
+        margin-bottom: 1.6em;
+      }
+
+      h1 {
+        font-size: 1em;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: calc(12px + 0.5vw);
+        font-weight: 900;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      a {
+        color: var(--fg);
+        text-decoration: underline;
+        text-decoration-thickness: 0.125em;
+        text-decoration-color: red;
+        text-underline-offset: 0.2em;
+      }
+
+      a:hover {
+        text-decoration-style: dashed;
+      }
+
+      strong {
+        font-weight: 700;
+      }
+
+      header > * {
+        flex-shrink: 0;
+      }
+
+      header > :first-child {
+        flex-shrink: 1;
+        flex-grow: 1;
+      }
+
+      #specimen {
+        padding-top: clamp(0.5em, 5vw, 4em);
+      }
+
+      [id^="pause"],
+      [id^="slow"],
+      [for^="pause"],
+      [for^="slow"] {
+        margin-top: 0;
+        margin-bottom: 2em;
+      }
+
+      [id^="pause"],
+      [id^="slow"] {
+        margin-left: 0;
+        margin-right: 0;
+        scroll-margin: 10rem;
+      }
+
+      [for^="pause"],
+      [for^="slow"] {
+        margin-right: 1em;
+      }
+
+      [id^="pause"]:checked ~ .stagger > *,
+      [id^="pause"]:checked ~ * .stagger > * {
+        animation-play-state: running;
+      }
+
+      [id^="slow"]:checked ~ .stagger > *,
+      [id^="slow"]:checked ~ * .stagger > * {
+        --duration: 8s;
+      }
+
+      .stagger {
+        margin-bottom: 2em;
+      }
+
+      .stagger > * {
+        --step: calc(var(--duration, 4s) / 13);
+        list-style-type: none;
+        animation: bigger infinite;
+        animation-duration: var(--duration, 4s);
+        animation-delay: calc(var(--step) * (var(--n, 1) - 1));
+        animation-timing-function: linear;
+        animation-fill-mode: backwards;
+        animation-play-state: paused;
+      }
+
+      .jumbo {
+        font-size: calc(14px + 6vw);
+        line-height: 1.2;
+      }
+
+      .medium {
+        font-size: calc(14px + 3vw);
+        line-height: 1.4;
+      }
+
+      .small {
+        font-size: calc(12px + 0.5vw);
+        line-height: 1.6;
+      }
+
+      .nowrap {
+        white-space: nowrap;
+      }
+
+      ul,
+      li,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      @keyframes bigger {
+        0% {
+          font-variation-settings: "wght" 100;
+        }
+        50% {
+          font-variation-settings: "wght" 900;
+        }
+        100% {
+          font-variation-settings: "wght" 100;
+        }
+      }
+
+      :nth-child(1) {
+        --n: 1;
+      }
+      :nth-child(2) {
+        --n: 2;
+      }
+      :nth-child(3) {
+        --n: 3;
+      }
+      :nth-child(4) {
+        --n: 4;
+      }
+      :nth-child(5) {
+        --n: 5;
+      }
+      :nth-child(6) {
+        --n: 6;
+      }
+      :nth-child(7) {
+        --n: 7;
+      }
+
+      #black:target {
+        --fg: white;
+        --bg: black;
+      }
+
+      #pink:target .pink::after,
+      #black:target .black::after {
+        content: var(--active);
+      }
+
+      #pink:target .white::after,
+      #black:target .white::after {
+        content: var(--inactive);
+      }
+
+      #pink:target {
+        --fg: blue;
+        --bg: hsl(324, 100%, 90%);
+      }
+
+      .theme {
+        --active: "x";
+        --inactive: "o";
+        display: inline-block;
+        position: relative;
+        text-indent: -9999px;
+        border: 6px double;
+        width: 1em;
+        font-size: 1.5em;
+        line-height: 1;
+        overflow: hidden;
+        color: var(--color, black);
+        background-color: var(--bgc, white);
+        margin-left: 0.25em;
+      }
+
+      .theme:focus-visible {
+        outline: 2px dashed var(--fg, black);
+        outline-offset: 2px;
+      }
+
+      .theme::after {
+        position: absolute;
+        content: var(--inactive);
+        top: 0;
+        left: 0;
+        text-indent: 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .white::after {
+        content: var(--active);
+      }
+
+      .black {
+        --color: white;
+        --bgc: black;
+      }
+
+      .pink {
+        --color: blue;
+        --bgc: hsl(324, 100%, 90%);
+      }
+
+      .fw1 {
+        font-weight: 100;
+      }
+      .fw5 {
+        font-weight: 500;
+      }
+      .fw9 {
+        font-weight: 900;
+      }
+
+      [contenteditable]:focus {
+        outline: none;
+        background-color: var(--fg, black);
+        color: var(--bg, white);
+        margin: 0.25em 0;
+        padding: 0.25em 0.1em;
+        white-space: normal;
+      }
+    </style>
+  </head>
+
+  <body id="black">
+    <main id="pink">
+      <header>
+        <h1>Avara Variable</h1>
+        <a class="theme white" href="#">white</a>
+        <a class="theme black" href="#black">black</a>
+        <a class="theme pink" href="#pink">pink</a>
+      </header>
+
+      <div id="specimen">
+        <section>
+          <h2>Click a word to edit it</h2>
+          <input type="checkbox" checked id="pause1" />
+          <label for="pause1" class="small">Animate</label>
+          <input type="checkbox" id="slow1" />
+          <label for="slow1" class="small">½&nbsp;Speed</label>
+          <ul class="jumbo stagger nowrap">
+            <li lang="es" contenteditable spellcheck="false">Azulejo</li>
+            <li lang="fr" contenteditable spellcheck="false">Vélocipède</li>
+            <li contenteditable spellcheck="false">Awestruck</li>
+            <li contenteditable spellcheck="false">Reflexively</li>
+            <li contenteditable spellcheck="false">Aquamarine</li>
+            <li lang="nl" contenteditable spellcheck="false">Vliegtuigen</li>
+            <li lang="de" contenteditable spellcheck="false">Fußballheld</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Basic Latin</h2>
+          <input type="checkbox" id="pause2" />
+          <label for="pause2" class="small">Animate</label>
+          <input type="checkbox" id="slow2" />
+          <label for="slow2" class="small">½&nbsp;Speed</label>
+          <ul class="medium stagger nowrap">
+            <li>
+              <p>ABCDEFGHIJKLMN</p>
+              <p>OPQRSTUVWXYZ</p>
+              <p>abcdefghijklmnopqr</p>
+              <p>stuvwxyz 0123456789</p>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Selected Diacritics</h2>
+          <input type="checkbox" id="pause3" />
+          <label for="pause3" class="small">Animate</label>
+          <input type="checkbox" id="slow3" />
+          <label for="slow3" class="small">½&nbsp;Speed</label>
+          <ul class="medium stagger nowrap">
+            <li>
+              <p>ÁḄÇÐÈFǦĦĮĴĶŁṀÑ</p>
+              <p>ƠŐQŘŚŦÜŮẂXȲẔ</p>
+              <p>äḅčđéfğħīĵķłḿñổŕ</p>
+              <p>şťʉẁÿź</p>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Localisation</h2>
+          <input type="checkbox" id="pause4" />
+          <label for="pause4" class="small">Animate</label>
+          <input type="checkbox" id="slow4" />
+          <label for="slow4" class="small">½&nbsp;Speed</label>
+          <ul class="medium stagger nowrap">
+            <li lang="is">Verði þér góður</li>
+            <li lang="fr">œufs brouillés</li>
+            <li lang="vi">Đường cong</li>
+            <li lang="ca">PARAL·LEL</li>
+            <li lang="dk">København</li>
+            <li lang="de">STRAẞENBAHN</li>
+          </ul>
+        </section>
+      </div>
+
+      <footer class="small">
+        <p>
+          Avara Variable is a fork of
+          <a href="https://velvetyne.fr/">Velvetyne Type Foundry</a>’s curveless
+          type family <a href="https://velvetyne.fr/fonts/avara/">Avara</a>,
+          which has the unusual constraint of placing all points on a strict
+          square grid, dividing the cap height into twenty increments.
+        </p>
+        <p>
+          Avara Variable adds a <span class="fw1">Thin (100)</span> weight and
+          makes outlines compatible across the weights to enable variable font
+          interpolation. The original <span class="fw5">Bold</span> and
+          <span class="fw9">Black</span> designs are treated as the 500 and 900
+          weights respectively. This fork also includes much wider language
+          support than currently provided by Avara.
+        </p>
+        <!-- <p>
+          One side effect of the curveless design is a small file size. Currently,
+          the unoptimised WOFF2 file, containing more than 600&nbsp;glyphs across a full range of
+          weights, is only around 26&nbsp;KB. This drops to 15&nbsp;KB when subsetting the font using
+          <a href="https://www.fontsquirrel.com/tools/webfont-generator">Font Squirrel</a>’s default options.
+          For comparison, three variable serif fonts with a similar range of weights downloaded from
+          Google Fonts and subset with Font Squirrel, produced files 31, 27 &amp; 23&nbsp;KB in size
+          (Hepta Slab, Kreon, Roboto Slab). The variable font is also smaller than the static versions of
+          Avara Bold and Black, which total 20&nbsp;KB when subset.
+        </p> -->
+        <p>
+          <strong>Original design:</strong>
+          <a href="https://raphaelbastide.com/">Raphaël&nbsp;Bastide</a>,
+          <a href="https://lucaslebihan.fr/">Lucas&nbsp;Le&nbsp;Bihan</a>,
+          <a href="https://github.com/weiweihuanghuang/">Wei&nbsp;Huang</a>,
+          <a href="https://www.akakir.com/">Walid&nbsp;Bouchouchi</a>,
+          <a href="https://studiotriple.fr/">Jérémy&nbsp;Landes</a>
+        </p>
+        <p>
+          <strong>Variable font & thin weight:</strong>
+          <a href="https://www.chrisswithinbank.net/">Chris&nbsp;Swithinbank</a>
+        </p>
+        <p>
+          <strong>License:</strong>
+          <a href="https://scripts.sil.org/OFL"
+            >SIL Open Font License, Version&nbsp;1.1</a
+          >
+        </p>
+        <p>
+          <strong
+            ><a href="https://github.com/delucis/avara-variable"
+              >View source on GitHub&nbsp;»</a
+            ></strong
+          >
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
