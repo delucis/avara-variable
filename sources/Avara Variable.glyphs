@@ -85715,7 +85715,7 @@ width = 640;
 },
 {
 glyphname = circumflexcomb_gravecomb;
-lastChange = "2021-06-26 13:15:20 +0000";
+lastChange = "2021-06-29 22:50:18 +0000";
 layers = (
 {
 layerId = m003;
@@ -85724,8 +85724,8 @@ shapes = (
 ref = circumflexcomb;
 },
 {
-anchor = top_viet_left;
-pos = (-160,120);
+anchor = top_viet;
+pos = (240,120);
 ref = gravecomb;
 }
 );
@@ -85738,8 +85738,8 @@ shapes = (
 ref = circumflexcomb;
 },
 {
-anchor = top_viet_left;
-pos = (-160,120);
+anchor = top_viet;
+pos = (200,120);
 ref = gravecomb;
 }
 );
@@ -85752,8 +85752,8 @@ shapes = (
 ref = circumflexcomb;
 },
 {
-anchor = top_viet_left;
-pos = (-140,160);
+anchor = top_viet;
+pos = (300,160);
 ref = gravecomb;
 }
 );
