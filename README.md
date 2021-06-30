@@ -4,6 +4,7 @@ Avara Variable is a fork of [Velvetyne Type Foundry][vtf]’s curveless type fam
 
 Avara Variable adds a Thin (100) weight and makes outlines compatible across the weights to enable variable font interpolation. The original Bold and Black designs are treated as the 500 and 900 weights respectively. This fork also includes much wider language support than currently provided by Avara.
 
+[**👀 Demo Page →**][demo]
 
 ## Language support
 
@@ -15,4 +16,5 @@ This Font Software is licensed under the [SIL Open Font License, Version 1.1][of
 
 [vtf]: https://velvetyne.fr/
 [avr]: https://velvetyne.fr/fonts/avara/
+[demo]: https://delucis.github.io/avara-variable/
 [ofl]: http://scripts.sil.org/OFL
