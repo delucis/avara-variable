@@ -304,6 +304,33 @@
         padding: 0.25em 0.1em;
         white-space: normal;
       }
+
+      .cover {
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: grid;
+        place-content: center;        
+      }
+
+      .error {
+        padding: .5em 1vw;
+        max-width: 36rem;
+        text-align: center;
+        border: 6px double;
+        background-color: white;
+        color: red;
+        font-size: 1.5em;
+      }
+
+      @supports (font-variation-settings: normal) {
+        .cover {
+          display: none;
+        }
+      }
     </style>
   </head>
 
@@ -435,6 +462,9 @@
           >
         </p>
       </footer>
+      <aside class="cover">
+        <p class="error">This demo page requires variable font support. Please try a recent version of Firefox or Chrome.</p>
+      </aside>
     </main>
   </body>
 </html>
