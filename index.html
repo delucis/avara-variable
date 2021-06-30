@@ -10,8 +10,8 @@
 
     <style>
       @font-face {
-        font-family: "Avara";
-        src: url("fonts/AvaraVariable.woff2") format("woff2-variations");
+        font-family: 'Avara';
+        src: url('fonts/AvaraVariable.woff2') format('woff2-variations');
         font-style: normal;
         font-weight: 100 900;
       }
@@ -19,9 +19,9 @@
       body {
         margin: 0;
         font-size: 1.125rem;
-        font-family: "Avara";
-        font-feature-settings: "kern" 1, "liga" 1, "dlig" 1, "clig" 1, "calt" 1,
-          "frac" 1;
+        font-family: 'Avara';
+        font-feature-settings: 'kern' 1, 'liga' 1, 'dlig' 1, 'clig' 1, 'calt' 1,
+          'frac' 1;
         font-weight: 300;
         line-height: 1.6;
         overflow-x: hidden;
@@ -116,33 +116,33 @@
         padding-top: clamp(0.5em, 5vw, 4em);
       }
 
-      [id^="pause"],
-      [id^="slow"],
-      [for^="pause"],
-      [for^="slow"] {
+      [id^='pause'],
+      [id^='slow'],
+      [for^='pause'],
+      [for^='slow'] {
         margin-top: 0;
         margin-bottom: 2em;
       }
 
-      [id^="pause"],
-      [id^="slow"] {
+      [id^='pause'],
+      [id^='slow'] {
         margin-left: 0;
         margin-right: 0;
         scroll-margin: 10rem;
       }
 
-      [for^="pause"],
-      [for^="slow"] {
+      [for^='pause'],
+      [for^='slow'] {
         margin-right: 1em;
       }
 
-      [id^="pause"]:checked ~ .stagger > *,
-      [id^="pause"]:checked ~ * .stagger > * {
+      [id^='pause']:checked ~ .stagger > *,
+      [id^='pause']:checked ~ * .stagger > * {
         animation-play-state: running;
       }
 
-      [id^="slow"]:checked ~ .stagger > *,
-      [id^="slow"]:checked ~ * .stagger > * {
+      [id^='slow']:checked ~ .stagger > *,
+      [id^='slow']:checked ~ * .stagger > * {
         --duration: 8s;
       }
 
@@ -189,13 +189,13 @@
 
       @keyframes bigger {
         0% {
-          font-variation-settings: "wght" 100;
+          font-variation-settings: 'wght' 100;
         }
         50% {
-          font-variation-settings: "wght" 900;
+          font-variation-settings: 'wght' 900;
         }
         100% {
-          font-variation-settings: "wght" 100;
+          font-variation-settings: 'wght' 100;
         }
       }
 
@@ -242,8 +242,8 @@
       }
 
       .theme {
-        --active: "x";
-        --inactive: "o";
+        --active: 'x';
+        --inactive: 'o';
         display: inline-block;
         position: relative;
         text-indent: -9999px;
