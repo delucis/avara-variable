@@ -10,7 +10,17 @@ Avara Variable adds a Thin (100) weight and makes outlines compatible across the
 
 ## Language support
 
-Afrikaans, Albanian, Azerbaijani, Basque, Bosnian, Catalan, Croatian, Czech, Danish, Dutch, English, Estonian, Faroese, Filipino, Finnish, French, Galician, German, Hungarian, Icelandic, Indonesian, Irish, Italian, Latvian, Lithuanian, Malay, Norwegian Bokmål, Polish, Portuguese, Romanian, Slovak, Slovenian, Spanish, Swahili, Swedish, Turkish, Vietnamese, Welsh, Zulu
+Afrikaans, Aja, Akan, Albanian, Alsatian, Aromanian, Asturian, Azeri,
+Basaa, Breton, Catalan, Central Yambasa, Chinese (Pinyin), Croatian,
+Czech, Danish, Duala, Dutch, English, Esperanto, Estonian, Ewondo,
+Finnish, Fon, French, Gagauz, German, Guarani, Hungarian, Icelandic,
+Igbo, Indonesian, Irish, Italian, Jula, Kako, Koyra Chiini, Koyraboro
+Senni, Lakota, Latin, Latvian, Lingala, Lithuanian, Livonian, Maltese,
+Mapudungun, Marshallese, Mundang, Navajo, Ngiemboon, Ngomba, Northern
+Sami, Norwegian, Polish, Portuguese, Romanian, Scottish Gaelic,
+Serbian, Skolt Sami, Slovak, Slovenian, Spanish, Swedish, Tagalog,
+Tlapanec, Turkish, Uzbek, Uzbek (planned reform), Vai, Vietnamese,
+Walser German, Welsh, West Frisian, Yoruba, Zarma, Zazaki, Zulu
 
 ## License
 
