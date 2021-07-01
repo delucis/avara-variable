@@ -13,15 +13,16 @@ Avara Variable adds a Thin (100) weight and makes outlines compatible across the
 Afrikaans, Aja, Akan, Albanian, Alsatian, Aromanian, Asturian, Azeri,
 Basaa, Breton, Catalan, Central Yambasa, Chinese (Pinyin), Croatian,
 Czech, Dagbani, Danish, Dinka, Duala, Dutch, English, Esperanto,
-Estonian, Ewondo, Finnish, Fon, French, Fula, Gagauz, German, Guarani,
-Hausa, Hungarian, Icelandic, Igbo, Indonesian, Irish, Italian, Jula,
-Kabyle, Kako, Koyra Chiini, Koyraboro Senni, Lakota, Latin, Latvian,
-Lingala, Lithuanian, Livonian, Maltese, Mapudungun, Marshallese,
-Mundang, Navajo, Ngiemboon, Ngomba, Northern Sami, Norwegian, Polish,
-Portuguese, Riffian, Romanian, Scottish Gaelic, Serbian, Shawiya,
-Shilha, Skolt Sami, Slovak, Slovenian, Spanish, Swedish, Tagalog,
-Tlapanec, Turkish, Uzbek, Uzbek (planned reform), Vai, Vietnamese,
-Walser German, Welsh, West Frisian, Yoruba, Zarma, Zazaki, Zulu
+Estonian, Ewe, Ewondo, Finnish, Fon, French, Fula, Gagauz, German,
+Guarani, Hausa, Hungarian, Icelandic, Igbo, Indonesian, Irish,
+Italian, Jula, Kabyle, Kako, Koyra Chiini, Koyraboro Senni, Lakota,
+Latin, Latvian, Lingala, Lithuanian, Livonian, Maltese, Mapudungun,
+Marshallese, Mundang, Navajo, Ngiemboon, Ngomba, Northern Sami,
+Norwegian, Polish, Portuguese, Riffian, Romanian, Scottish Gaelic,
+Serbian, Shawiya, Shilha, Skolt Sami, Slovak, Slovenian, Spanish,
+Swedish, Tagalog, Tlapanec, Turkish, Uzbek, Uzbek (planned reform),
+Vai, Vietnamese, Walser German, Welsh, West Frisian, Yoruba, Zarma,
+Zazaki, Zulu
 
 ## License
 
