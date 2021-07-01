@@ -35902,9 +35902,15 @@ unicode = 477;
 },
 {
 glyphname = schwa;
-lastChange = "2021-06-26 11:12:00 +0000";
+lastChange = "2021-07-01 16:00:09 +0000";
 layers = (
 {
+anchors = (
+{
+name = top;
+pos = (280,560);
+}
+);
 layerId = m003;
 shapes = (
 {
@@ -35941,6 +35947,12 @@ nodes = (
 width = 560;
 },
 {
+anchors = (
+{
+name = top;
+pos = (240,560);
+}
+);
 layerId = master01;
 shapes = (
 {
@@ -35977,6 +35989,12 @@ nodes = (
 width = 540;
 },
 {
+anchors = (
+{
+name = top;
+pos = (280,600);
+}
+);
 layerId = "EBA0A543-5703-488C-9449-531557917997";
 shapes = (
 {
