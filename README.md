@@ -24,6 +24,12 @@ Slovenian, Spanish, Swedish, Tagalog, Tlapanec, Turkish, Uzbek, Uzbek
 (planned reform), Vai, Vietnamese, Walser German, Welsh, West Frisian,
 Yoruba, Zarma, Zazaki, Zulu
 
+## Credits
+
+Original design by [Raphaël&nbsp;Bastide][rb], [Lucas&nbsp;Le&nbsp;Bihan][llb],
+[Wei&nbsp;Huang][wh], [Walid&nbsp;Bouchouchi][wb], and [Jérémy&nbsp;Landes][jl].
+Published by [Velvetyne Type Foundry][vtf].
+
 ## License
 
 This Font Software is licensed under the [SIL Open Font License, Version 1.1][ofl].
@@ -32,4 +38,9 @@ This Font Software is licensed under the [SIL Open Font License, Version 1.1][of
 [avr]: https://velvetyne.fr/fonts/avara/
 [demo]: https://delucis.github.io/avara-variable/
 [samsa]: https://lorp.github.io/samsa/src/samsa-gui.html?preload=https://delucis.github.io/avara-variable/fonts/AvaraVariable[wght].ttf
+[rb]: https://raphaelbastide.com/
+[llb]: https://lucaslebihan.fr/
+[wh]: https://github.com/weiweihuanghuang/
+[wb]: https://www.akakir.com/
+[jl]: https://studiotriple.fr/
 [ofl]: http://scripts.sil.org/OFL
