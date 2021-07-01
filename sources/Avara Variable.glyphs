@@ -317,8 +317,8 @@ lookup locl_latn_3 {
 lookup locl_latn_4 {
 	script latn;
 	language CAT;
-	sub l periodcentered' l by periodcentered.loclCAT;
-	sub L periodcentered' L by periodcentered.loclCAT;
+	sub  l' periodcentered' l by ldot;
+	sub  L' periodcentered' L by Ldot;
 } locl_latn_4;
 
 lookup locl_latn_5 {
@@ -75428,39 +75428,6 @@ width = 240;
 }
 );
 unicode = 92;
-},
-{
-glyphname = periodcentered.loclCAT;
-lastChange = "2021-06-27 09:42:39 +0000";
-layers = (
-{
-layerId = m003;
-shapes = (
-{
-ref = periodcentered;
-}
-);
-width = 200;
-},
-{
-layerId = master01;
-shapes = (
-{
-ref = periodcentered;
-}
-);
-width = 240;
-},
-{
-layerId = "EBA0A543-5703-488C-9449-531557917997";
-shapes = (
-{
-ref = periodcentered;
-}
-);
-width = 320;
-}
-);
 },
 {
 glyphname = hyphen;
